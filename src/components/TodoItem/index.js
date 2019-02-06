@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 
 export default class TodoItem extends Component {
-  render(props) {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
     return (
       <div className='todo-item'>
         <input type="checkbox" checked={this.props.item.completed} />
